@@ -11,8 +11,8 @@ The SDK outputs a single-channel 8-bit grayscale image (or a binary matrix) of t
 
 Below is an illustration showing the **segmentation coverage**:
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/cb54bf83-745c-49bd-90ae-1816b20d01bd" width="450" />
-  <img src="https://github.com/user-attachments/assets/0fefcda6-a9b3-455e-8dd4-e655ae8fb91e" width="450" />
+  <img src="https://github.com/user-attachments/assets/cb54bf83-745c-49bd-90ae-1816b20d01bd" width="48%" />
+  <img src="https://github.com/user-attachments/assets/0fefcda6-a9b3-455e-8dd4-e655ae8fb91e" width="48%" />
 </p>
 
 ## **Key Features**
