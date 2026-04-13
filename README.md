@@ -1,4 +1,3 @@
-<img width="1365" height="768" alt="mask_blur" src="https://github.com/user-attachments/assets/0fefcda6-a9b3-455e-8dd4-e655ae8fb91e" />
 # **Upperbody Segmentation SDK**
 
 `UpperbodySegmentationSDK` is a high-performance human silhouette extraction and masking library built on **OpenCV** and **DeepCore (Deepixel's proprietary library)**. It leverages TensorFlow Lite models for real-time human detection, precise foreground-background separation, and high-quality segmentation masking. 
