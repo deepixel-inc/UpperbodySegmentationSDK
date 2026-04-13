@@ -53,8 +53,7 @@ Below is an illustration showing the **segmentation coverage**:
 ### 3. SDK Size
 | Category | Value | Uncompressed Details |
 | :--- | :--- | :--- |
-| <div align="center">**SDK Size**</div> | **Compressed** <br> └ x.x MB | ├─ `sdk.so` [xx.x MB] <br> │&nbsp;&nbsp;&nbsp;&nbsp;*(includes opencv, tensorflowlite, c code)* |
-| | **Uncompressed** <br> └ xx.x MB | ├─ `C++_shared.so` [x.x MB] <br> └─ `model_file.tflite` [xxx KB] |
+| <div align="center">**SDK Size**</div> | **Compressed**<br>└ x.x MB<br><br>**Uncompressed**<br>└ xx.x MB | ├─ `sdk.so` [xx.x MB]<br>│&nbsp;&nbsp;&nbsp;&nbsp;*(includes opencv, tensorflowlite, c code)*<br>├─ `C++_shared.so` [x.x MB]<br>└─ `model_file.tflite` [xxx KB] |
 
 
 ## **API Reference**
