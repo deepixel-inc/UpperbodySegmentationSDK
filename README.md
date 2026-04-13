@@ -29,7 +29,7 @@ Below is an illustration showing the **segmentation coverage**:
 ## **Performance**
 
 ### 1. Speed
-> **Note:** GPU Usage is **0%** (Only CPU Inference is used). Values in parentheses indicate the margin relative to the target.
+> **Note:** GPU Usage is **0%** (Only CPU Inference is used).
 
 | Phone Model | Year | CPU Name | Tier | Target <br> (ms / %) | **Inference** <br> **Time (ms)** | **CPU** <br> **Usage (%)** |
 | :--- | :---: | :--- | :--- | :---: | :---: | :---: |
