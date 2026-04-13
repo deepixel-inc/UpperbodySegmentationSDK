@@ -10,8 +10,8 @@ The SDK outputs a single-channel 8-bit grayscale image (or a binary matrix) of t
 
 
 Below is an illustration showing the **segmentation coverage**:
-![Segmentation Coverage Example](path/to/your_image.png)
-
+<img width="1365" height="768" alt="Gemini_Generated_Image_jee9oqjee9oqjee9" src="https://github.com/user-attachments/assets/cb54bf83-745c-49bd-90ae-1816b20d01bd" />
+<img width="1365" height="768" alt="mask" src="https://github.com/user-attachments/assets/975a87a1-360a-4ed4-865c-0b3d122ed935" />
 
 ## **Key Features**
 * **Real-time Processing:** Fast and accurate upperbody (portrait) segmentation.
@@ -51,8 +51,8 @@ Below is an illustration showing the **segmentation coverage**:
 ### 3. SDK Size
 | Category | Value | Uncompressed Details |
 | :--- | :--- | :--- |
-| <div align="center">**SDK Size**</div> | **Compressed** <br> └ 5.5 MB | ├─ `sdk.so` [12.1 MB] <br> │&nbsp;&nbsp;&nbsp;&nbsp;*(includes opencv, tensorflowlite, c code)* |
-| | **Uncompressed** <br> └ 13.9 MB | ├─ `C++_shared.so` [1.0 MB] <br> └─ `model_file.tflite` [800 KB] |
+| <div align="center">**SDK Size**</div> | **Compressed** <br> └ x.x MB | ├─ `sdk.so` [xx.x MB] <br> │&nbsp;&nbsp;&nbsp;&nbsp;*(includes opencv, tensorflowlite, c code)* |
+| | **Uncompressed** <br> └ xx.x MB | ├─ `C++_shared.so` [x.x MB] <br> └─ `model_file.tflite` [xxx KB] |
 
 
 ## **API Reference**
