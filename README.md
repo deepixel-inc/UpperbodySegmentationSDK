@@ -10,8 +10,10 @@ The SDK outputs a single-channel 8-bit grayscale image (or a binary matrix) of t
 
 
 Below is an illustration showing the **segmentation coverage**:
-<img width="1365" height="768" alt="Gemini_Generated_Image_jee9oqjee9oqjee9" src="https://github.com/user-attachments/assets/cb54bf83-745c-49bd-90ae-1816b20d01bd" />
-<img width="1365" height="768" alt="mask" src="https://github.com/user-attachments/assets/975a87a1-360a-4ed4-865c-0b3d122ed935" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/cb54bf83-745c-49bd-90ae-1816b20d01bd" width="450" />
+  <img src="https://github.com/user-attachments/assets/975a87a1-360a-4ed4-865c-0b3d122ed935" width="450" />
+</p>
 
 ## **Key Features**
 * **Real-time Processing:** Fast and accurate upperbody (portrait) segmentation.
