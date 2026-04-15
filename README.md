@@ -51,9 +51,13 @@ Below is an illustration showing the **segmentation coverage**:
 
 
 ### 3. SDK Size
-| Category | Value | Uncompressed Details |
-| :--- | :--- | :--- |
-| <div align="center">**SDK Size**</div> | **Compressed**<br>└ x.x MB<br><br>**Uncompressed**<br>└ xx.x MB | ├─ `sdk.so` [xx.x MB]<br>│&nbsp;&nbsp;&nbsp;&nbsp;*(includes opencv, tensorflowlite, c code)*<br>├─ `C++_shared.so` [x.x MB]<br>└─ `model_file.tflite` [xxx KB] |
+| 플랫폼 | 파일 | Uncompressed | Compressed (gzip) |
+|---|---|---|---|
+| **Android arm64-v8a** | libhumanx_native_android.so | 7.38 MB | 3.16 MB |
+| **Android armeabi-v7a** | libhumanx_native_android.so | 4.60 MB | 2.50 MB |
+| **iOS arm64** | libhumanx_native_ios.dylib | 11.63 MB | 4.60 MB |
+| **macOS arm64** | libhumanx_native_mac.dylib | 14.64 MB | 5.29 MB |
+| **WASM** (js + wasm) | humanx_native_wasm.* | 6.69 MB | 2.11 MB |
 
 
 <!-- ## **API** -->
