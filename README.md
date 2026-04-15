@@ -12,7 +12,7 @@ The SDK outputs a single-channel 8-bit grayscale image of the same resolution as
 Below is an illustration showing the **segmentation coverage**:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/cb54bf83-745c-49bd-90ae-1816b20d01bd" width="48%" />
-  <img src="https://github.com/user-attachments/assets/0fefcda6-a9b3-455e-8dd4-e655ae8fb91e" width="48%" />
+  <img src="https://github.com/user-attachments/assets/7d8396af-885a-496e-a74b-257dd384fa48" width="48%" />
 </p>
 
 ## **Key Features**
