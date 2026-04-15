@@ -30,15 +30,15 @@ Below is an illustration showing the **segmentation coverage**:
 ### 1. Speed
 > **Note:** GPU Usage is **0%** (Only CPU Inference is used).
 
-| Phone Model | Year | CPU Name | Tier | Target <br> (ms / %) | **Inference** <br> **Time (ms)** | **CPU** <br> **Usage (%)** |
-| :--- | :---: | :--- | :--- | :---: | :---: | :---: |
-| Samsung Galaxy S9 | 2018 | Exynos 9810 | Android-Low | 20 / 10 | **7-8** (-13) | **2.75** (-7.25) |
-| Samsung Galaxy A52s | 2021 | Snapdragon 778G | Android-Mid | 9 / 4 | **8.15** (-0.85) | **3.04** (-0.96) |
-| Samsung Galaxy Fold3 | 2021 | Snapdragon 888 | Android-High | 5 / 4 | **4.99** (-0.01) | **1.86** (-2.14) |
-| Samsung Galaxy S22 | 2022 | Snapdragon 8 Gen 1 | Android-High | 5 / 4 | **4.25** (-0.75) | **1.58** (-2.42) |
-| iPhone 6s | 2015 | A9 | iOS-Low | 15 / 20 | **12-13** (-3) | **19.5-20.5** (-0.5) |
-| iPhone XS | 2018 | A12 Bionic | iOS-Mid | 7 / 4 | **5.55** (-1.45) | **3-4** (-1) |
-| iPhone 14 Pro | 2022 | A16 Bionic | iOS-High | 5 / 4 | **3.09** (-1.91) | **1.8** (-2.2) |
+| Phone Model | Year | CPU Name | Tier | **Inference** <br> **Time (ms)** | **CPU** <br> **Usage (%)** |
+| :--- | :---: | :--- | :--- | :---: | :---: |
+| Samsung Galaxy S9 | 2018 | Exynos 9810 | Android-Low |  **7-8** | **2.75** |
+| Samsung Galaxy A52s | 2021 | Snapdragon 778G | Android-Mid | **8.15** | **3.04** |
+| Samsung Galaxy Fold3 | 2021 | Snapdragon 888 | Android-High | **4.99** | **1.86** |
+| Samsung Galaxy S22 | 2022 | Snapdragon 8 Gen 1 | Android-High | **4.25** | **1.58** |
+| iPhone 6s | 2015 | A9 | iOS-Low | **12-13** | **19.5-20.5** |
+| iPhone XS | 2018 | A12 Bionic | iOS-Mid | **5.55** | **3-4** |
+| iPhone 14 Pro | 2022 | A16 Bionic | iOS-High | **3.09** | **1.8** |
 * Inference Time reflects only the internal model execution time
 
 ### 2. Accuracy
