@@ -67,7 +67,7 @@ Created Date: 2026-04-14
 ## Scope
 
 - Main namespace (C++): `xyz::deepixel` and `xyz::deepixel::coreai`
-- Main module (NAVER): upper body segmentation
+- Main module (NAVER): `UpperbodySegmentationSDK`
 
 ## Header Map
 
@@ -174,7 +174,7 @@ Input frame descriptor for image processing APIs.
 
 ### struct CoreAIUpperBodySegmentationOutput
 
-Upper body segmentation inference result.
+`UpperbodySegmentationSDK` inference result.
 
 **Description**: Contains processing status and segmentation output for a single frame. The output mask represents the detected human region with pixel-level foreground confidence.
 
@@ -182,7 +182,7 @@ Upper body segmentation inference result.
 
 - `unsigned int timestamp` - Frame timestamp propagated from input context.
 - `bool success` - True when segmentation succeeded and `segmentationMask` is valid.
-- `ImageBuffer segmentationMask` - Pixel-level upper body segmentation mask image.
+- `ImageBuffer segmentationMask` - Pixel-level `UpperbodySegmentationSDK` mask image.
 
 **Segmentation Mask Characteristics**:
 
@@ -197,7 +197,7 @@ Upper body segmentation inference result.
 
 ### class xyz::deepixel::coreai::CoreAIUpperBodySegmentationNaver
 
-High-performance upper body segmentation engine.
+High-performance `UpperbodySegmentationSDK` engine.
 
 **Description**: This class performs real-time foreground/background separation. It generates a segmentation mask for the detected human region, enabling clean upper-body extraction from the background.
 
@@ -226,7 +226,7 @@ High-performance upper body segmentation engine.
 **Initialization**:
 
 - `bool dpxl_coreai_upperbodyseg_naver_initialize(DpxlCoreAIUpperBodySegmentationNaver* handle)`
-  - Initialize upper body segmentation with license key.
+  - Initialize `UpperbodySegmentationSDK` with license key.
   - Parameters: `handle` - Pointer to CoreAIUpperBodySegmentationNaver instance.
   - Returns: `true` if initialization succeeds, `false` otherwise.
 
@@ -238,7 +238,7 @@ High-performance upper body segmentation engine.
 **Inference**:
 
 - `bool dpxl_coreai_upperbodyseg_naver_process(DpxlCoreAIUpperBodySegmentationNaver* handle, const DpxlFrameInput* data, double blurSigma, DpxlCoreAIUpperBodySegmentationOutput* output)`
-  - Process image for upper body segmentation.
+  - Process image for `UpperbodySegmentationSDK`.
   - Parameters:
     - `handle` - Pointer to CoreAIUpperBodySegmentationNaver instance.
     - `data` - Processing data containing image information.
@@ -310,7 +310,7 @@ C input frame descriptor for image processing APIs.
 
 ### struct DpxlCoreAIUpperBodySegmentationOutput
 
-C upper body segmentation inference result.
+C `UpperbodySegmentationSDK` inference result.
 
 **Description**: Contains processing status and segmentation output for a single frame.
 
@@ -318,7 +318,7 @@ C upper body segmentation inference result.
 
 - `uint32_t timestamp` - Frame timestamp propagated from input context.
 - `bool success` - True when segmentation succeeded and `segmentationMask` is valid.
-- `DpxlImageBuffer segmentationMask` - Pixel-level upper body segmentation mask image.
+- `DpxlImageBuffer segmentationMask` - Pixel-level `UpperbodySegmentationSDK` mask image.
 
 **Segmentation Mask Characteristics**:
 
@@ -335,7 +335,7 @@ C upper body segmentation inference result.
 
 `typedef struct DpxlCoreAIUpperBodySegmentationNaver DpxlCoreAIUpperBodySegmentationNaver;`
 
-**Description**: Opaque handle for the C++ CoreAIUpperBodySegmentationNaver instance. This handle refers to a high-performance upper body segmentation engine that performs real-time foreground/background separation and generates a segmentation mask for the detected human region, enabling clean upper-body extraction from the background.
+**Description**: Opaque handle for the C++ CoreAIUpperBodySegmentationNaver instance. This handle refers to a high-performance `UpperbodySegmentationSDK` engine that performs real-time foreground/background separation and generates a segmentation mask for the detected human region, enabling clean upper-body extraction from the background.
 
 **Output Mask Characteristics**:
 - Single-channel 8-bit grayscale image
@@ -362,7 +362,7 @@ C upper body segmentation inference result.
 **Initialization**:
 
 - `bool dpxl_coreai_upperbodyseg_naver_initialize(DpxlCoreAIUpperBodySegmentationNaver* handle)`
-  - Initialize upper body segmentation with license key.
+  - Initialize `UpperbodySegmentationSDK` with license key.
   - Parameters: `handle` - Pointer to CoreAIUpperBodySegmentationNaver instance.
   - Returns: `true` if initialization succeeds, `false` otherwise.
 
@@ -374,7 +374,7 @@ C upper body segmentation inference result.
 **Inference**:
 
 - `bool dpxl_coreai_upperbodyseg_naver_process(DpxlCoreAIUpperBodySegmentationNaver* handle, const DpxlFrameInput* data, double blurSigma, DpxlCoreAIUpperBodySegmentationOutput* output)`
-  - Process image for upper body segmentation.
+  - Process image for `UpperbodySegmentationSDK`.
   - Parameters:
     - `handle` - Pointer to CoreAIUpperBodySegmentationNaver instance.
     - `data` - Processing data containing image information.
