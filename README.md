@@ -6,7 +6,7 @@ It outputs a high-resolution segmentation mask corresponding to the detected hum
 **seamlessly separate the human upper body from the background** for various applications.
 
 
-The SDK outputs a single-channel 8-bit grayscale image (or a binary matrix) of the same resolution as the input. Each pixel value represents the probability of being part of the foreground, where 255 (or 1.0) indicates a confirmed human region and 0 indicates the background,
+The SDK outputs a single-channel 8-bit grayscale image (or a binary matrix) of the same resolution as the input. Each pixel value represents the probability of being part of the foreground, where 255 indicates a confirmed human region and 0 indicates the background,
 
 
 Below is an illustration showing the **segmentation coverage**:
@@ -190,7 +190,7 @@ Upper body segmentation inference result.
 - Single-channel 8-bit grayscale image (or equivalent binary matrix)
 - Same resolution as input image
 - Foreground confidence per pixel:
-  - `255` (or 1.0): confirmed foreground (human region)
+  - `255`: confirmed foreground (human region)
   - `0`: background
 
 ## CoreAI Class
@@ -295,7 +295,7 @@ C upper body segmentation inference result.
 - Single-channel 8-bit grayscale image (or equivalent binary matrix)
 - Same resolution as input image
 - Foreground confidence per pixel:
-  - `255` (or 1.0): confirmed foreground (human region)
+  - `255`: confirmed foreground (human region)
   - `0`: background
 
 ## CoreAI Handle and Functions
