@@ -2,7 +2,7 @@
 
 `UpperbodySegmentationSDK` is a high-performance human silhouette extraction and masking library built on **OpenCV** and **DeepCore (Deepixel's proprietary library)**. It leverages TensorFlow Lite models for real-time human detection, precise foreground-background separation, and high-quality segmentation masking. 
 
-It outputs a high-resolution segmentation mask corresponding to the detected human region, providing pixel-level accuracy. This enables you to 
+It outputs a segmentation mask corresponding to the detected human region, providing pixel-level accuracy. This enables you to 
 **seamlessly separate the human upper body from the background** for various applications.
 
 
@@ -17,7 +17,6 @@ Below is an illustration showing the **segmentation coverage**:
 
 ## **Key Features**
 * **Real-time Processing:** Fast and accurate upperbody (portrait) segmentation.
-* **Precise Extraction:** Generates high-resolution binary masks.
 * **Robust Algorithms:** Highly resilient against complex backgrounds, motion blurs, and lighting changes.
 * **Multi-person Support:** Supports simultaneous segmentation of multiple people in a single frame.
 * **Ultra-lightweight:** Works on CPU only — no GPU required.
@@ -200,7 +199,7 @@ Upper body segmentation inference result.
 
 High-performance upper body segmentation engine.
 
-**Description**: This class performs real-time foreground/background separation. It generates a high-resolution mask for the detected human region, enabling clean upper-body extraction from the background.
+**Description**: This class performs real-time foreground/background separation. It generates a segmentation mask for the detected human region, enabling clean upper-body extraction from the background.
 
 **Output Mask Characteristics**:
 - Single-channel 8-bit grayscale image
@@ -307,7 +306,7 @@ C upper body segmentation inference result.
 
 `typedef struct DpxlCoreAIUpperBodySegmentationNaver DpxlCoreAIUpperBodySegmentationNaver;`
 
-**Description**: Opaque handle for the C++ CoreAIUpperBodySegmentationNaver instance. This handle refers to a high-performance upper body segmentation engine that performs real-time foreground/background separation and generates a high-resolution mask for the detected human region, enabling clean upper-body extraction from the background.
+**Description**: Opaque handle for the C++ CoreAIUpperBodySegmentationNaver instance. This handle refers to a high-performance upper body segmentation engine that performs real-time foreground/background separation and generates a segmentation mask for the detected human region, enabling clean upper-body extraction from the background.
 
 **Output Mask Characteristics**:
 - Single-channel 8-bit grayscale image
