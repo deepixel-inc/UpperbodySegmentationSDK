@@ -6,7 +6,7 @@ It outputs a high-resolution segmentation mask corresponding to the detected hum
 **seamlessly separate the human upper body from the background** for various applications.
 
 
-The SDK outputs a single-channel 8-bit grayscale image (or a binary matrix) of the same resolution as the input. Each pixel value represents the probability of being part of the foreground, where 255 indicates a confirmed human region and 0 indicates the background,
+The SDK outputs a single-channel 8-bit grayscale image of the same resolution as the input. Pixel values range from 0 to 255, where 255 indicates the foreground and 0 indicates the background. Intermediate values may appear near foreground-background boundaries to create a soft transition and reduce aliasing artifacts,
 
 
 Below is an illustration showing the **segmentation coverage**:
@@ -190,8 +190,9 @@ Upper body segmentation inference result.
 - Single-channel 8-bit grayscale image (or equivalent binary matrix)
 - Same resolution as input image
 - Foreground confidence per pixel:
-  - `255`: confirmed foreground (human region)
-  - `0`: background
+  - 255: confirmed foreground (human region)
+  - 1–254: soft edge / transition region
+  - 0: background
 
 ## CoreAI Class
 
@@ -207,6 +208,7 @@ High-performance upper body segmentation engine.
 - Each pixel ranges from 0–255, representing foreground probability.
 - Pixel-level foreground confidence:
   - `255`: confirmed foreground (human region)
+  - `1–254`: soft edge / transition region
   - `0`: background
   - Users may threshold (e.g., >128) to obtain a binary mask.
 
@@ -296,6 +298,7 @@ C upper body segmentation inference result.
 - Same resolution as input image
 - Foreground confidence per pixel:
   - `255`: confirmed foreground (human region)
+  - `1–254`: soft edge / transition region
   - `0`: background
 
 ## CoreAI Handle and Functions
@@ -312,6 +315,7 @@ C upper body segmentation inference result.
 - Each pixel ranges from 0–255, representing foreground probability.
 - Pixel-level foreground confidence:
   - `255`: confirmed foreground (human region)
+  - `1–254`: soft edge / transition region
   - `0`: background
   - Users may threshold (e.g., >128) to obtain a binary mask.
 
