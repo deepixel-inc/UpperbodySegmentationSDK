@@ -378,7 +378,9 @@ C upper body segmentation inference result.
   - Parameters:
     - `handle` - Pointer to CoreAIUpperBodySegmentationNaver instance.
     - `data` - Processing data containing image information.
-    - `blurSigma` - Gaussian blur sigma for segmentation pre-processing (default: 0.5).
+    - `blurSigma` - Gaussian blur sigma for segmentation post-processing (default: 0.5).
+      - Lower values → sharper edges, potentially more noise
+      - Higher values → smoother results, may reduce fine details
     - `output` - Output structure to store the result.
   - Returns: `true` if processing/result generation succeeds, `false` otherwise.
 
