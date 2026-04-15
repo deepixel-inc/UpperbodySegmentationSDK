@@ -202,12 +202,13 @@ High-performance upper body segmentation engine.
 **Description**: This class performs real-time foreground/background separation. It generates a high-resolution mask for the detected human region, enabling clean upper-body extraction from the background.
 
 **Output Mask Characteristics**:
-
-- Single-channel 8-bit grayscale image (or equivalent binary matrix)
+- Single-channel 8-bit grayscale image
 - Same resolution as input image
+- Each pixel ranges from 0–255, representing foreground probability.
 - Pixel-level foreground confidence:
-  - `255` (or 1.0): confirmed foreground (human region)
+  - `255`: confirmed foreground (human region)
   - `0`: background
+  - Users may threshold (e.g., >128) to obtain a binary mask.
 
 **Public Methods**:
 
@@ -306,11 +307,13 @@ C upper body segmentation inference result.
 **Description**: Opaque handle for the C++ CoreAIUpperBodySegmentationNaver instance. This handle refers to a high-performance upper body segmentation engine that performs real-time foreground/background separation and generates a high-resolution mask for the detected human region, enabling clean upper-body extraction from the background.
 
 **Output Mask Characteristics**:
-- Single-channel 8-bit grayscale image (or equivalent binary matrix)
+- Single-channel 8-bit grayscale image
 - Same resolution as input image
+- Each pixel ranges from 0–255, representing foreground probability.
 - Pixel-level foreground confidence:
-  - `255` (or 1.0): confirmed foreground (human region)
+  - `255`: confirmed foreground (human region)
   - `0`: background
+  - Users may threshold (e.g., >128) to obtain a binary mask.
 
 ### Lifecycle and Inference Functions
 
