@@ -39,6 +39,7 @@ Below is an illustration showing the **segmentation coverage**:
 | iPhone 6s | 2015 | A9 | iOS-Low | 15 / 20 | **12-13** (-3) | **19.5-20.5** (-0.5) |
 | iPhone XS | 2018 | A12 Bionic | iOS-Mid | 7 / 4 | **5.55** (-1.45) | **3-4** (-1) |
 | iPhone 14 Pro | 2022 | A16 Bionic | iOS-High | 5 / 4 | **3.09** (-1.91) | **1.8** (-2.2) |
+* Inference Time reflects only the internal model execution time
 
 ### 2. Accuracy
 
