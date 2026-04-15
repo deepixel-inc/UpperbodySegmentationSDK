@@ -211,13 +211,42 @@ High-performance upper body segmentation engine.
   - `0`: background
   - Users may threshold (e.g., >128) to obtain a binary mask.
 
-**Public Methods**:
+### Lifecycle and Inference Functions
 
-- `CoreAIUpperBodySegmentationNaver()` - Constructor.
-- `virtual ~CoreAIUpperBodySegmentationNaver()` - Destructor.
-- `bool initialize()` - Initialize the upper body segmentation algorithm. Returns `true` if initialization succeeds, `false` otherwise.
-- `bool isInitialized() const` - Check if algorithm is initialized. Returns `true` if initialized, `false` otherwise.
-- `CoreAIUpperBodySegmentationOutput process(const FrameInput& data, double blurSigma = 0.5)` - Process image for upper body segmentation. Takes `FrameInput` and Gaussian blur sigma for pre-processing.
+**Lifecycle**:
+
+- `DpxlCoreAIUpperBodySegmentationNaver* dpxl_coreai_upperbodyseg_naver_create(void)`
+  - Create and initialize CoreAIUpperBodySegmentationNaver instance.
+  - Returns: Opaque pointer to CoreAIUpperBodySegmentationNaver instance.
+
+- `void dpxl_coreai_upperbodyseg_naver_destroy(DpxlCoreAIUpperBodySegmentationNaver* handle)`
+  - Destroy CoreAIUpperBodySegmentationNaver instance.
+  - Parameters: `handle` - Pointer to CoreAIUpperBodySegmentationNaver instance.
+
+**Initialization**:
+
+- `bool dpxl_coreai_upperbodyseg_naver_initialize(DpxlCoreAIUpperBodySegmentationNaver* handle)`
+  - Initialize upper body segmentation with license key.
+  - Parameters: `handle` - Pointer to CoreAIUpperBodySegmentationNaver instance.
+  - Returns: `true` if initialization succeeds, `false` otherwise.
+
+- `bool dpxl_coreai_upperbodyseg_naver_is_initialized(DpxlCoreAIUpperBodySegmentationNaver* handle)`
+  - Check if algorithm is initialized.
+  - Parameters: `handle` - Pointer to CoreAIUpperBodySegmentationNaver instance.
+  - Returns: `true` if initialized, `false` otherwise.
+
+**Inference**:
+
+- `bool dpxl_coreai_upperbodyseg_naver_process(DpxlCoreAIUpperBodySegmentationNaver* handle, const DpxlFrameInput* data, double blurSigma, DpxlCoreAIUpperBodySegmentationOutput* output)`
+  - Process image for upper body segmentation.
+  - Parameters:
+    - `handle` - Pointer to CoreAIUpperBodySegmentationNaver instance.
+    - `data` - Processing data containing image information.
+    - `blurSigma` - Gaussian blur sigma for segmentation post-processing (default: 0.5).
+      - Lower values → sharper edges, potentially more noise
+      - Higher values → smoother results, may reduce fine details
+    - `output` - Output structure to store the result.
+  - Returns: `true` if processing/result generation succeeds, `false` otherwise.
 
 ## C API
 
