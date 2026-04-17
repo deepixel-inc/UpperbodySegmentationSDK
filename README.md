@@ -45,9 +45,9 @@ Below is an illustration showing the **segmentation coverage**:
 
 | Metric | Value | Description |
 | :--- | :---: | :--- |
-| Mean IoU <br> Mean Boundary F1 <br> Mean Boundary IoU | **86.01%** <br> **88.77%** <br> **82.74%** | PP-HumanSeg14K<br> validation dataset<br>(2,431 images) |
-| Mean IoU <br> Mean Boundary F1 <br> Mean Boundary IoU | **97.32%** <br> **97.63%** <br> **90.31%** | EasyPortrait<br> validation dataset<br> (4,000 images) |
-| Mean IoU <br> Mean Boundary F1 <br> Mean Boundary IoU | **96.17%** <br> **95.05%** <br> **84.15%** | EG1800 dataset<br> (1,710 images) |
+| Mean IoU <br> Mean Boundary F1 <br> Mean Boundary IoU | **85.83%** <br> **86.88%** <br> **76.27%** | PP-HumanSeg14K<br> validation dataset<br>(2,431 images) |
+| Mean IoU <br> Mean Boundary F1 <br> Mean Boundary IoU | **97.28%** <br> **95.13%** <br> **83.24%** | EasyPortrait<br> test dataset<br> (4,000 images) |
+| Mean IoU <br> Mean Boundary F1 <br> Mean Boundary IoU | **96.25%** <br> **91.66%** <br> **76.15%** | EG1800 dataset<br> (1,736 images) |
 
 
 ### 3. SDK Size
